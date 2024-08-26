@@ -1,0 +1,54 @@
+{
+    "compute_plan_key": "d48cdb79-1911-40fd-9dd0-6890b95d351c",
+    "strategy": "FedAvg",
+    "num_rounds": 10,
+    "function_keys": {
+        "62e034a7-e33a-4b6e-95db-6986307c7d39": {
+            "type": "TorchCNN",
+            "method_name": "initialize"
+        },
+        "c721e871-819f-4fe4-b57b-47a36ef51be5": {
+            "type": "TorchCNN",
+            "method_name": "train"
+        },
+        "ca80b6e3-a26e-4e5c-a853-18c2d858e9e4": {
+            "type": "FedAvg",
+            "method_name": "avg_shared_states"
+        }
+    },
+    "train_data_nodes": [
+        {
+            "organization_id": "MyOrg2MSP",
+            "data_manager_key": "6941b4d3-4e9a-4ca7-bf8f-17fbf15bb76e",
+            "data_sample_keys": [
+                "688eae78-bae5-497e-a094-2a7533b8455d"
+            ]
+        },
+        {
+            "organization_id": "MyOrg3MSP",
+            "data_manager_key": "a9273bef-fdec-4010-b044-98de1f30ae1e",
+            "data_sample_keys": [
+                "d0c1854c-bd91-4c2c-baa5-c45cc73a0bd5"
+            ]
+        }
+    ],
+    "test_data_nodes": [
+        {
+            "organization_id": "MyOrg2MSP",
+            "data_manager_key": "6941b4d3-4e9a-4ca7-bf8f-17fbf15bb76e",
+            "data_sample_keys": [
+                "688eae78-bae5-497e-a094-2a7533b8455d"
+            ]
+        },
+        {
+            "organization_id": "MyOrg3MSP",
+            "data_manager_key": "a9273bef-fdec-4010-b044-98de1f30ae1e",
+            "data_sample_keys": [
+                "d0c1854c-bd91-4c2c-baa5-c45cc73a0bd5"
+            ]
+        }
+    ],
+    "aggregation_node": {
+        "organization_id": "MyOrg1MSP"
+    }
+}
