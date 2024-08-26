@@ -1,0 +1,304 @@
+
+(base) C:\Users\probl>cd C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline
+
+(base) C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline>conda env create -f substra-environment-torch_fedavg_assets.yml
+Channels:
+ - conda-forge
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+Installing pip dependencies: / Ran pip subprocess with arguments:
+['C:\\Users\\probl\\anaconda3\\envs\\object_detection_substra_3\\python.exe', '-m', 'pip', 'install', '-U', '-r', 'C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pip]
+Pip subprocess output:
+Collecting substrafl (from -r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached substrafl-0.46.0-py3-none-any.whl.metadata (19 kB)
+Collecting matplotlib==3.6.3 (from -r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached matplotlib-3.6.3-cp311-cp311-win_amd64.whl.metadata (6.8 kB)
+Collecting numpy==1.24.3 (from -r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 3))
+  Using cached numpy-1.24.3-cp311-cp311-win_amd64.whl.metadata (5.6 kB)
+Collecting pandas==1.5.3 (from -r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 4))
+  Using cached pandas-1.5.3-cp311-cp311-win_amd64.whl.metadata (12 kB)
+Collecting scikit-learn==1.3.1 (from -r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 5))
+  Using cached scikit_learn-1.3.1-cp311-cp311-win_amd64.whl.metadata (11 kB)
+Collecting torch==2.0.1 (from -r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 6))
+  Using cached torch-2.0.1-cp311-cp311-win_amd64.whl.metadata (24 kB)
+Collecting torchvision==0.15.2 (from -r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 7))
+  Using cached torchvision-0.15.2-cp311-cp311-win_amd64.whl.metadata (11 kB)
+Collecting pydicom (from -r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 8))
+  Using cached pydicom-2.4.4-py3-none-any.whl.metadata (7.8 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.6.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached contourpy-1.2.1-cp311-cp311-win_amd64.whl.metadata (5.8 kB)
+Collecting cycler>=0.10 (from matplotlib==3.6.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib==3.6.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached fonttools-4.53.1-cp311-cp311-win_amd64.whl.metadata (165 kB)
+Collecting kiwisolver>=1.0.1 (from matplotlib==3.6.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached kiwisolver-1.4.5-cp311-cp311-win_amd64.whl.metadata (6.5 kB)
+Collecting packaging>=20.0 (from matplotlib==3.6.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached packaging-24.1-py3-none-any.whl.metadata (3.2 kB)
+Collecting pillow>=6.2.0 (from matplotlib==3.6.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached pillow-10.4.0-cp311-cp311-win_amd64.whl.metadata (9.3 kB)
+Collecting pyparsing>=2.2.1 (from matplotlib==3.6.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached pyparsing-3.1.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting python-dateutil>=2.7 (from matplotlib==3.6.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 2))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas==1.5.3->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 4))
+  Using cached pytz-2024.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting scipy>=1.5.0 (from scikit-learn==1.3.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 5))
+  Using cached scipy-1.14.1-cp311-cp311-win_amd64.whl.metadata (60 kB)
+Collecting joblib>=1.1.1 (from scikit-learn==1.3.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 5))
+  Using cached joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.3.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 5))
+  Using cached threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+Collecting filelock (from torch==2.0.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 6))
+  Using cached filelock-3.15.4-py3-none-any.whl.metadata (2.9 kB)
+Collecting typing-extensions (from torch==2.0.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 6))
+  Using cached typing_extensions-4.12.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting sympy (from torch==2.0.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 6))
+  Using cached sympy-1.13.2-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch==2.0.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 6))
+  Using cached networkx-3.3-py3-none-any.whl.metadata (5.1 kB)
+Collecting jinja2 (from torch==2.0.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 6))
+  Using cached jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting requests (from torchvision==0.15.2->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 7))
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting cloudpickle>=1.6.0 (from substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached cloudpickle-3.0.0-py3-none-any.whl.metadata (7.0 kB)
+Collecting pip-tools (from substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached pip_tools-7.4.1-py3-none-any.whl.metadata (26 kB)
+Requirement already satisfied: pip>=21.2 in c:\users\probl\anaconda3\envs\object_detection_substra_3\lib\site-packages (from substrafl->-r C:\Users\probl\Work\Substra_env\substra)
+Collecting pydantic<3.0,>=2.3.0 (from substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached pydantic-2.8.2-py3-none-any.whl.metadata (125 kB)
+Collecting six (from substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting substratools~=0.21.4 (from substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached substratools-0.21.4-py3-none-any.whl.metadata (15 kB)
+Collecting substra~=0.53.0 (from substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached substra-0.53.0-py3-none-any.whl.metadata (17 kB)
+Collecting tqdm (from substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached tqdm-4.66.5-py3-none-any.whl.metadata (57 kB)
+Requirement already satisfied: wheel in c:\users\probl\anaconda3\envs\object_detection_substra_3\lib\site-packages (from substrafl->-r C:\Users\probl\Work\Substra_env\substra_sin)
+Collecting annotated-types>=0.4.0 (from pydantic<3.0,>=2.3.0->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (li)
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.20.1 (from pydantic<3.0,>=2.3.0->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (lin)
+  Using cached pydantic_core-2.20.1-cp311-none-win_amd64.whl.metadata (6.7 kB)
+Collecting docker (from substra~=0.53.0->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached docker-7.1.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting python-slugify (from substra~=0.53.0->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached python_slugify-8.0.4-py2.py3-none-any.whl.metadata (8.5 kB)
+Collecting pyyaml (from substra~=0.53.0->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached PyYAML-6.0.2-cp311-cp311-win_amd64.whl.metadata (2.1 kB)
+Collecting requests (from torchvision==0.15.2->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 7))
+  Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting charset-normalizer<4,>=2 (from requests->torchvision==0.15.2->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (li)
+  Using cached charset_normalizer-3.3.2-cp311-cp311-win_amd64.whl.metadata (34 kB)
+Collecting idna<4,>=2.5 (from requests->torchvision==0.15.2->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 7))
+  Using cached idna-3.8-py3-none-any.whl.metadata (9.9 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->torchvision==0.15.2->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 7))
+  Using cached urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+Collecting certifi>=2017.4.17 (from requests->torchvision==0.15.2->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 7))
+  Using cached certifi-2024.7.4-py3-none-any.whl.metadata (2.2 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.0.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 6))
+  Using cached MarkupSafe-2.1.5-cp311-cp311-win_amd64.whl.metadata (3.1 kB)
+Collecting build>=1.0.0 (from pip-tools->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached build-1.2.1-py3-none-any.whl.metadata (4.3 kB)
+Collecting click>=8 (from pip-tools->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+Collecting pyproject-hooks (from pip-tools->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached pyproject_hooks-1.1.0-py3-none-any.whl.metadata (1.3 kB)
+Requirement already satisfied: setuptools in c:\users\probl\anaconda3\envs\object_detection_substra_3\lib\site-packages (from pip-tools->substrafl->-r C:\Users\probl\Work\Substra)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->torch==2.0.1->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 6))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting colorama (from tqdm->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting pywin32>=304 (from docker->substra~=0.53.0->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements.txt (line 1))
+  Using cached pywin32-306-cp311-cp311-win_amd64.whl.metadata (6.5 kB)
+Collecting text-unidecode>=1.3 (from python-slugify->substra~=0.53.0->substrafl->-r C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\condaenv.21hapyey.requirements)
+  Using cached text_unidecode-1.3-py2.py3-none-any.whl.metadata (2.4 kB)
+Using cached matplotlib-3.6.3-cp311-cp311-win_amd64.whl (7.2 MB)
+Using cached numpy-1.24.3-cp311-cp311-win_amd64.whl (14.8 MB)
+Using cached pandas-1.5.3-cp311-cp311-win_amd64.whl (10.3 MB)
+Using cached scikit_learn-1.3.1-cp311-cp311-win_amd64.whl (9.2 MB)
+Using cached torch-2.0.1-cp311-cp311-win_amd64.whl (172.3 MB)
+Using cached torchvision-0.15.2-cp311-cp311-win_amd64.whl (1.2 MB)
+Using cached substrafl-0.46.0-py3-none-any.whl (117 kB)
+Using cached pydicom-2.4.4-py3-none-any.whl (1.8 MB)
+Using cached cloudpickle-3.0.0-py3-none-any.whl (20 kB)
+Using cached contourpy-1.2.1-cp311-cp311-win_amd64.whl (188 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.53.1-cp311-cp311-win_amd64.whl (2.2 MB)
+Using cached joblib-1.4.2-py3-none-any.whl (301 kB)
+Using cached kiwisolver-1.4.5-cp311-cp311-win_amd64.whl (56 kB)
+Using cached packaging-24.1-py3-none-any.whl (53 kB)
+Using cached pillow-10.4.0-cp311-cp311-win_amd64.whl (2.6 MB)
+Using cached pydantic-2.8.2-py3-none-any.whl (423 kB)
+Using cached pydantic_core-2.20.1-cp311-none-win_amd64.whl (1.9 MB)
+Using cached pyparsing-3.1.2-py3-none-any.whl (103 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2024.1-py2.py3-none-any.whl (505 kB)
+Using cached scipy-1.14.1-cp311-cp311-win_amd64.whl (44.8 MB)
+Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Using cached substra-0.53.0-py3-none-any.whl (66 kB)
+Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Using cached substratools-0.21.4-py3-none-any.whl (18 kB)
+Using cached threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Using cached typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Using cached filelock-3.15.4-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.4-py3-none-any.whl (133 kB)
+Using cached networkx-3.3-py3-none-any.whl (1.7 MB)
+Using cached pip_tools-7.4.1-py3-none-any.whl (61 kB)
+Using cached sympy-1.13.2-py3-none-any.whl (6.2 MB)
+Using cached tqdm-4.66.5-py3-none-any.whl (78 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached build-1.2.1-py3-none-any.whl (21 kB)
+Using cached certifi-2024.7.4-py3-none-any.whl (162 kB)
+Using cached charset_normalizer-3.3.2-cp311-cp311-win_amd64.whl (99 kB)
+Using cached click-8.1.7-py3-none-any.whl (97 kB)
+Using cached idna-3.8-py3-none-any.whl (66 kB)
+Using cached MarkupSafe-2.1.5-cp311-cp311-win_amd64.whl (17 kB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached urllib3-2.2.2-py3-none-any.whl (121 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached docker-7.1.0-py3-none-any.whl (147 kB)
+Using cached pyproject_hooks-1.1.0-py3-none-any.whl (9.2 kB)
+Using cached python_slugify-8.0.4-py2.py3-none-any.whl (10 kB)
+Using cached PyYAML-6.0.2-cp311-cp311-win_amd64.whl (161 kB)
+Using cached pywin32-306-cp311-cp311-win_amd64.whl (9.2 MB)
+Using cached text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+Installing collected packages: text-unidecode, pywin32, pytz, mpmath, urllib3, typing-extensions, threadpoolctl, sympy, substratools, six, pyyaml, python-slugify, pyproject-hooksl
+Successfully installed MarkupSafe-2.1.5 annotated-types-0.7.0 build-1.2.1 certifi-2024.7.4 charset-normalizer-3.3.2 click-8.1.7 cloudpickle-3.0.0 colorama-0.4.6 contourpy-1.2.1 c2
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate object_detection_substra_3
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline>conda activate object_detection_substra_3
+
+(object_detection_substra_3) C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline>cd C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline
+
+(object_detection_substra_3) C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline>python main_2.py
+2024-08-25 02:12:01,293 - INFO - Number of organizations: 3
+2024-08-25 02:12:01,293 - INFO - Algorithm provider: MyOrg1MSP
+2024-08-25 02:12:01,293 - INFO - Data providers: ['MyOrg2MSP', 'MyOrg3MSP']
+2024-08-25 02:12:02,242 - INFO - Limiting dataset to 20 images
+C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\pydicom\pixel_data_handlers\pillow_handler.py:238: UserWarning: The (0028,0101) 'Bits Stored' value (12-bit) doesn't match the JPEG 2000 data (16-bit). It's recommended that you change the 'Bits Stored' value
+  warnings.warn(
+C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\pydicom\pixel_data_handlers\pillow_handler.py:238: UserWarning: The (0028,0101) 'Bits Stored' value (12-bit) doesn't match the JPEG 2000 data (16-bit). It's recommended that you change the 'Bits Stored' value
+  warnings.warn(
+C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\pydicom\pixel_data_handlers\pillow_handler.py:238: UserWarning: The (0028,0101) 'Bits Stored' value (12-bit) doesn't match the JPEG 2000 data (16-bit). It's recommended that you change the 'Bits Stored' value
+  warnings.warn(
+C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\pydicom\pixel_data_handlers\pillow_handler.py:238: UserWarning: The (0028,0101) 'Bits Stored' value (12-bit) doesn't match the JPEG 2000 data (16-bit). It's recommended that you change the 'Bits Stored' value
+  warnings.warn(
+C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\pydicom\pixel_data_handlers\pillow_handler.py:238: UserWarning: The (0028,0101) 'Bits Stored' value (12-bit) doesn't match the JPEG 2000 data (16-bit). It's recommended that you change the 'Bits Stored' value
+  warnings.warn(
+2024-08-25 02:12:07,006 - INFO - Processed 20 images
+2024-08-25 02:12:07,012 - INFO - Organization 1: 8 training images, 2 test images
+2024-08-25 02:12:07,015 - INFO - Organization 2: 8 training images, 2 test images
+DATA PATH <#################################################3 C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\tmp\data_vinbigdata
+DATA PATH <#################################################3 C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\tmp\data_vinbigdata
+DATA PATH <#################################################3 C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\tmp\data_vinbigdata
+DATA PATH <#################################################3 C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\tmp\data_vinbigdata
+DATA PATH <#################################################3 C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\tmp\data_vinbigdata
+DATA PATH <#################################################3 C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\tmp\data_vinbigdata
+2024-08-25 02:12:07,031 - INFO - Dataset with key 'f2d358e9-2448-4c65-b7d7-464d33e5b1f2' has been created.
+2024-08-25 02:12:07,031 - INFO - add_dataset: done in 8.00ms; error=None
+2024-08-25 02:12:07,032 - INFO - DataSample with key 'ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4' has been created.
+2024-08-25 02:12:07,032 - INFO - add_data_sample: done in 0.00ms; error=None
+2024-08-25 02:12:07,035 - INFO - Dataset with key 'eb747e79-3637-4b1b-8978-1ac02c6b3133' has been created.
+2024-08-25 02:12:07,036 - INFO - add_dataset: done in 3.00ms; error=None
+2024-08-25 02:12:07,036 - INFO - DataSample with key 'd3921c5a-b178-4c19-ae44-b19f21dfa987' has been created.
+2024-08-25 02:12:07,036 - INFO - add_data_sample: done in 0.00ms; error=None
+2024-08-25 02:12:07,036 - INFO - Data registered successfully.
+2024-08-25 02:12:07,036 - INFO - Dataset keys: {'MyOrg2MSP': 'f2d358e9-2448-4c65-b7d7-464d33e5b1f2', 'MyOrg3MSP': 'eb747e79-3637-4b1b-8978-1ac02c6b3133'}
+2024-08-25 02:12:07,036 - INFO - Train datasample keys: {'MyOrg2MSP': 'ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4', 'MyOrg3MSP': 'd3921c5a-b178-4c19-ae44-b19f21dfa987'}
+2024-08-25 02:12:07,036 - INFO - Test datasample keys: {'MyOrg2MSP': 'ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4', 'MyOrg3MSP': 'd3921c5a-b178-4c19-ae44-b19f21dfa987'}
+Metrics definition. Function accuracy >>>>>>>>>>>>>>>>>>>>>>>> <function accuracy at 0x000002067BC38360>
+Metrics definition. Function roc_auc >>>>>>>>>>>>>>>>>>>>>>>> <function roc_auc at 0x000002067BC38220>
+Specifying on how much data to train. Complete
+Torch Dataset definition. Complete
+SubstraFL algo definition. Complete
+Federated Learning strategies. Complete
+Where to train where to aggregate. Complete
+Where and when to test. Complete
+specify the third parties dependencies required to run it. Complete
+execute_experiment. Started
+Rounds progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 10/10 [00:00<00:00, 2001.86it/s]
+2024-08-25 02:12:19,088 - INFO - Function with key '20986500-eda9-472c-bfe8-bc77a01d7734' has been created.
+2024-08-25 02:12:19,088 - INFO - add_function: done in 366.36ms; error=None
+2024-08-25 02:12:29,136 - INFO - Function with key '0cb84c29-bf43-401c-8963-b4339dc1c921' has been created.
+2024-08-25 02:12:29,136 - INFO - add_function: done in 307.34ms; error=None
+2024-08-25 02:12:39,462 - INFO - Function with key 'bf13cf88-d120-4ee5-8c9c-8b8ac9eaf20e' has been created.
+2024-08-25 02:12:39,462 - INFO - add_function: done in 332.16ms; error=None
+2024-08-25 02:13:00,319 - INFO - Function with key 'ff4442ed-7f01-4120-b36f-4c6a1fa9b9b9' has been created.
+2024-08-25 02:13:00,320 - INFO - add_function: done in 1151.13ms; error=None
+2024-08-25 02:13:20,791 - INFO - Function with key '7f960d65-725b-48c3-bf82-6609a4ef3983' has been created.
+2024-08-25 02:13:20,792 - INFO - add_function: done in 821.61ms; error=None
+2024-08-25 02:13:20,834 - INFO - ComputePlan with key '4448a93e-2469-48fd-8804-e5aff6c6fe4d' has been created.
+Compute plan progress:   0%|                                                                                                                               | 0/56 [00:00<?, ?it/s]2024-08-25 02:13:20,835 - INFO - Task with key 'ff3502cc-4ee0-417d-b746-de7f45294772' has been created.
+2024-08-25 02:13:25,863 - INFO - Model with key '7f20418f-e7f4-4814-8233-efd139908ec9' has been created.
+2024-08-25 02:13:25,863 - INFO - OutputAsset with key 'b3a5b84a-f126-4420-92cd-005205acd0c4' has been created.
+Compute plan progress:   2%|██▏                                                                                                                    | 1/56 [00:05<04:37,  5.04s/it]2024-08-25 02:13:25,876 - INFO - Task with key '4f2a2337-3b06-40d7-ac00-e76e1d5bc52c' has been created.
+2024-08-25 02:13:31,521 - INFO - Model with key '0dabfeec-0ada-4263-8b32-ad527d60ea32' has been created.
+2024-08-25 02:13:31,521 - INFO - OutputAsset with key '6bbb83a9-fab7-467c-bad3-40c313d5aa68' has been created.
+Compute plan progress:   4%|████▎                                                                                                                  | 2/56 [00:10<04:51,  5.40s/it]2024-08-25 02:13:31,534 - INFO - Task with key 'afd1d28f-c4c7-4073-a32f-907588745c31' has been created.
+2024-08-25 02:13:31,538 - INFO - InputAsset with key '8abd7d26-b91c-4512-9a59-aa147afe6c1a' has been created.
+2024-08-25 02:13:31,538 - INFO - InputAsset with key '32a5de46-35e5-4b67-ad43-fee0c676a167' has been created.
+2024-08-25 02:13:31,538 - INFO - InputAsset with key 'cad05691-2220-4986-a979-4f6bc0fad674' has been created.
+Compute plan progress:   4%|████▎                                                                                                                  | 2/56 [00:13<05:51,  6.52s/it]
+2024-08-25 02:13:33,871 - INFO - add_compute_plan: done in 13037.58ms; error=Error
+Traceback (most recent call last):
+  File "C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline\main_2.py", line 469, in <module>
+    compute_plan = execute_experiment(
+                   ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substrafl\experiment.py", line 498, in execute_experiment
+    compute_plan = client.add_compute_plan(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\client.py", line 48, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\client.py", line 548, in add_compute_plan
+    return self._backend.add(spec, spec_options=spec_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\backends\local\backend.py", line 487, in add
+    compute_plan = add_asset(spec, spec_options)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\backends\local\backend.py", line 406, in _add_compute_plan
+    compute_plan = self.__execute_compute_plan(spec, compute_plan, visited, tasks, spec_options)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\backends\local\backend.py", line 269, in __execute_compute_plan
+    self.add(
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\backends\local\backend.py", line 491, in add
+    add_asset(key, spec, spec_options)
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\backends\local\backend.py", line 437, in _add_task
+    self._worker.schedule_task(task)
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\backends\local\compute\worker.py", line 359, in schedule_task
+    self._spawner.spawn(
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\backends\local\compute\spawner\subprocess.py", line 109, in spawn
+    _symlink_data_samples(data_sample_paths, local_volumes[VOLUME_INPUTS])
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\site-packages\substra\sdk\backends\local\compute\spawner\subprocess.py", line 76, in _symlink_data_samples
+    shutil.copytree(sample_path, dest_path, copy_function=os.symlink)
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\shutil.py", line 573, in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\probl\anaconda3\envs\object_detection_substra_3\Lib\shutil.py", line 527, in _copytree
+    raise Error(errors)
+shutil.Error: [('C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pipeline\\tmp\\data_vinbigdata\\org_1\\test_images.npy', 'C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pipeline\\local-worker\\afd1d28f-c4c7-4073-a32f-907588745c31\\inputs\\ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4\\test_images.npy', "[WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\probl\\\\Work\\\\Substra_env\\\\substra_single_file_ML_pipeline\\\\tmp\\\\data_vinbigdata\\\\org_1\\\\test_images.npy' -> 'C:\\\\Users\\\\probl\\\\Work\\\\Substra_env\\\\substra_single_file_ML_pipeline\\\\local-worker\\\\afd1d28f-c4c7-4073-a32f-907588745c31\\\\inputs\\\\ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4\\\\test_images.npy'"), ('C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pipeline\\tmp\\data_vinbigdata\\org_1\\test_labels.npy', 'C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pipeline\\local-worker\\afd1d28f-c4c7-4073-a32f-907588745c31\\inputs\\ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4\\test_labels.npy', "[WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\probl\\\\Work\\\\Substra_env\\\\substra_single_file_ML_pipeline\\\\tmp\\\\data_vinbigdata\\\\org_1\\\\test_labels.npy' -> 'C:\\\\Users\\\\probl\\\\Work\\\\Substra_env\\\\substra_single_file_ML_pipeline\\\\local-worker\\\\afd1d28f-c4c7-4073-a32f-907588745c31\\\\inputs\\\\ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4\\\\test_labels.npy'"), ('C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pipeline\\tmp\\data_vinbigdata\\org_1\\train_images.npy', 'C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pipeline\\local-worker\\afd1d28f-c4c7-4073-a32f-907588745c31\\inputs\\ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4\\train_images.npy', "[WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\probl\\\\Work\\\\Substra_env\\\\substra_single_file_ML_pipeline\\\\tmp\\\\data_vinbigdata\\\\org_1\\\\train_images.npy' -> 'C:\\\\Users\\\\probl\\\\Work\\\\Substra_env\\\\substra_single_file_ML_pipeline\\\\local-worker\\\\afd1d28f-c4c7-4073-a32f-907588745c31\\\\inputs\\\\ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4\\\\train_images.npy'"), ('C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pipeline\\tmp\\data_vinbigdata\\org_1\\train_labels.npy', 'C:\\Users\\probl\\Work\\Substra_env\\substra_single_file_ML_pipeline\\local-worker\\afd1d28f-c4c7-4073-a32f-907588745c31\\inputs\\ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4\\train_labels.npy', "[WinError 1314] A required privilege is not held by the client: 'C:\\\\Users\\\\probl\\\\Work\\\\Substra_env\\\\substra_single_file_ML_pipeline\\\\tmp\\\\data_vinbigdata\\\\org_1\\\\train_labels.npy' ->'C:\\\\Users\\\\probl\\\\Work\\\\Substra_env\\\\substra_single_file_ML_pipeline\\\\local-worker\\\\afd1d28f-c4c7-4073-a32f-907588745c31\\\\inputs\\\\ee1b8d7a-8ff2-4095-a3fc-c38e021a74f4\\\\train_labels.npy'")]
+2024-08-25 02:13:34,168 - INFO - logout: done in 0.00ms; error=None
+2024-08-25 02:13:34,168 - INFO - logout: done in 0.00ms; error=None
+2024-08-25 02:13:34,168 - INFO - logout: done in 0.00ms; error=None
+
+(object_detection_substra_3) C:\Users\probl\Work\Substra_env\substra_single_file_ML_pipeline>

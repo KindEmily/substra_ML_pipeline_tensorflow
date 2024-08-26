@@ -1,0 +1,20 @@
+name: ml_substra_tensorflow
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11 # Substrafl and Substra are compatible with Python versions 3.9, 3.10 and 3.11 on Windows, MacOS and Linux and currently Python latest is 3.12.4
+  - pip
+  - pip:
+    - substrafl # Substra is a dependency of SubstraFL, so it will be automatically installed. https://docs.substra.org/en/stable/examples/substrafl/get_started/run_mnist_torch.html
+    - substra
+    - matplotlib==3.6.3
+    - numpy==1.24.3
+    - pandas==1.5.3
+    - scikit-learn==1.3.1
+    - torch==2.0.1
+    - torchvision==0.15.2
+    # other 
+    - pydicom 
+
+# conda env create -f substra-environment-torch_fedavg_assets.yml

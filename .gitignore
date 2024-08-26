@@ -1,0 +1,11 @@
+/tmp/data_vinbigdata/train/*
+/local-worker/*
+
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
