@@ -1,4 +1,4 @@
-name: ml_substra_tensorflow
+name: substra_env
 channels:
   - conda-forge
   - defaults
@@ -17,4 +17,4 @@ dependencies:
     # other 
     - pydicom 
 
-# conda env create -f substra-environment-torch_fedavg_assets.yml
+# conda env create -f substra-tensorflow-env.yml
